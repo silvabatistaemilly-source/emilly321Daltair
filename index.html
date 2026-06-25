@@ -49,6 +49,23 @@
             list-style-type: square;
             padding-left: 20px;
         }
+        /* Estilos para tornar o vídeo do YouTube responsivo */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
         footer {
             background-color: #2b3e2a;
             color: #fff;
@@ -69,6 +86,7 @@
         <a href="#missao">Missão</a>
         <a href="#valores">Valores</a>
         <a href="#pilares">Pilares</a>
+        <a href="#midia">Multimídia</a>
     </nav>
 
     <div class="container">
@@ -96,6 +114,14 @@
                 <li><strong>Hierarquia:</strong> A ordenação da autoridade em diferentes níveis, garantindo a cadeia de comando.</li>
                 <li><strong>Disciplina:</strong> A obediência às leis, regulamentos e ordens que fundamentam a eficiência operacional.</li>
             </ol>
+        </section>
+
+        <section id="midia">
+            <h2>Multimídia</h2>
+            <p>Assista abaixo ao conteúdo em destaque sobre a instituição:</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/xbgKtqsyJhI?si=WX2Q0F_v8m3U9Zdl" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
 
     </div>
